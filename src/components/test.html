@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Animation</title>
+    <style>
+        /* Include CSS directly here for testing */
+        .heart-container {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .heart-symbol {
+            font-size: 1.5em;
+            color: pink;
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .heart-beat {
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            20% {
+                transform: scale(1.1);
+            }
+            40% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1.1);
+            }
+            80% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart-container">
+        Her <span class="heart-symbol heart-beat">❤️</span>
+    </div>
+</body>
+</html>
