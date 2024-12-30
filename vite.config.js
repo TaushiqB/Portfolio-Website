@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb'],
   //new git code
-  base: "/My-3d-website/"
+  base: "/Portfolio-Website/"
 })
